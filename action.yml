@@ -1,0 +1,26 @@
+name: 'CreatePR'
+description: 'Creates a PR to merge head into base'
+inputs:
+  owner:
+    description: 'Account Owner (erwin-inc)'
+    required: true
+    default: 'erwin-inc'
+  repository:
+    description: 'This repository'
+    required: true
+    default: 'zeta-shared-actions'
+  base:
+    description: 'Base branch (to merge into)'
+    required: true
+    default: 'master'
+  head:
+    description: 'Head branch (to merge from - release/xx.xx.xx)'
+    required: true
+    default: ''
+
+outputs:
+  output: # id of output
+    description: 'echo output'
+runs:
+  using: 'node16'
+  main: 'index.js'

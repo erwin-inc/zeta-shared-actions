@@ -1,2 +1,2 @@
 
-Copyright (C) 2022 Ian Hancock
+Copyright (C) 2022 Quest Software Ltd
